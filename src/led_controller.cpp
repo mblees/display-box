@@ -1,4 +1,3 @@
-#include "led_controller.h"
 #include "main.h" // included for LED_AMOUNT
 
 volatile uint8_t led_data[LED_AMOUNT][3];

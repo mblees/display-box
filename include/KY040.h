@@ -10,5 +10,6 @@
 void init_KY040();
 int getEncoderPosition();
 bool isButtonPressed();
+bool isButtonHeld3Seconds();
 
 #endif // KY-040_H

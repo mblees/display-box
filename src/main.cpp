@@ -5,7 +5,7 @@ void setup()
   Serial.begin(9600);
   Serial.println("Serial connected");
 
-  init_web_server();
+  // init_web_server();
   init_KY040();
   led_controller_init();
 }
@@ -27,6 +27,9 @@ void loop()
     }
   }
 
+if(isButtonHeld3Seconds()){
+  set_mode(4);
+}
   led_controller_do_work();
-  web_server_do_work();
+  // web_server_do_work();
 }
